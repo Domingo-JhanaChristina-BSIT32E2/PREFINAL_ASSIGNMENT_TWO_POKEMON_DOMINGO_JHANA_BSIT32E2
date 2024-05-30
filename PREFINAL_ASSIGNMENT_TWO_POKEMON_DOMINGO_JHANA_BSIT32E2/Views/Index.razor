@@ -1,0 +1,25 @@
+﻿@model PokemonApp.Models.Pokemon
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon Details</title>
+</head>
+<body>
+    <h1>@Model.Name</h1>
+    <h2>Moves:</h2>
+    <ul>
+        @foreach (var move in @Model.Moves)
+        {
+            <li>@move</li>
+        }
+    </ul>
+    <h2>Abilities:</h2>
+    <ul>
+        @foreach (var ability in @Model.Abilities)
+        {
+            <li>@ability</li>
+        }
+    </ul>
+</body>
+</html>
